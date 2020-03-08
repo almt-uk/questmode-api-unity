@@ -33,8 +33,8 @@ public class GetSkillsDemo : MonoBehaviour
             else
             {
                 //getting the data from the model and storing it into the class
+                skills = mSkillsModelDB.getSkills();
             }
-            print(mSkillsModelDB.skills);
 
         }));
     }
