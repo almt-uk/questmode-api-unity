@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EndPoints.cs" />
     <Compile Include="Assets\Scripts\GetSkills.cs" />
     <Compile Include="Assets\Scripts\GetSkillsDemo.cs" />
     <Compile Include="Assets\Scripts\SimpleJSON.cs" />
