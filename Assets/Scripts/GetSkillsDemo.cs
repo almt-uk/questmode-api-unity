@@ -34,9 +34,21 @@ public class GetSkillsDemo : MonoBehaviour
             {
                 //getting the data from the model and storing it into the class
                 skills = mSkillsModelDB.getSkills();
+                //simple method to show how to get the skills from array
+                gettingSkills();
             }
 
         }));
+    }
+
+    //methid that is printing the skill name and class
+    void gettingSkills()
+    {
+        foreach (SkillModel skill in skills)
+        {
+            Debug.Log("Skill Name: " + skill.name);
+            Debug.Log("Skill Class: " + skill.class_type);
+        }
     }
 
     // Update is called once per frame
