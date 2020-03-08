@@ -8,8 +8,23 @@ public class SkillModel
 {
     public int skill_id;
     public string name;
-    public int class_type;
+    int class_type;
     public int row;
+
+    public string getClass()
+    {
+        switch (class_type)
+        {
+            case 0:
+                // code block
+                return "wizzard";
+            case 1:
+                // code block
+                return "knight";
+            default:
+                return "unknown";
+        }
+    }
 }
 
 public class SkillsModel
