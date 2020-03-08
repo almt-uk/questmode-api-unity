@@ -55,16 +55,6 @@ public class SkillsModel
 public class GetSkills
 {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-    }
-
     string api_key = "null";
     string api_password = "null";
     string user_id = "null";
