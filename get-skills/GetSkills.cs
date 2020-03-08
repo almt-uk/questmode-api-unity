@@ -95,7 +95,6 @@ public class GetSkills
             else
             {
                 string responseText = www.downloadHandler.text;
-                Debug.Log(responseText);
                 SkillsModel mSkillsModel = JsonUtility.FromJson<SkillsModel>(responseText);
                 JSONNode data = JSON.Parse(responseText);
                 foreach (JSONNode skill in data["skills"])
