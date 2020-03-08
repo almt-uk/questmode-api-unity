@@ -9,8 +9,8 @@ public class GetSkillsDemo : MonoBehaviour
 	void Start () {
         
         GetSkills mGetSkills = new GetSkills();
-        mGetSkills.setApiKey("xtoAkWqVGp4nDtW6tZL1AaJUCl9I3tYcqjfTBhSu");
-        mGetSkills.setApiPassword("PHZ7dh4vHtbJoF7kD2RtZQUxi3opTFeXvpa0Jp7R");
+        mGetSkills.setApiKey("");
+        mGetSkills.setApiPassword("");
         mGetSkills.setUserID(737353637);
         StartCoroutine(mGetSkills.RequestCheckApi((mSkillsModelDB) => {
             print(mSkillsModelDB.skills);
