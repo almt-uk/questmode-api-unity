@@ -6,6 +6,8 @@ public class EndPoints
 {
 
     private static readonly string BASE_URL = "https://questmode.000webhostapp.com/v1";
-    private static readonly string UNITY_API_MODE = "/unity";
+    private static readonly string UNITY_API = "/unity";
+
+    public static readonly string GET_SKILLS = BASE_URL + "/get/skills";
 
 }
