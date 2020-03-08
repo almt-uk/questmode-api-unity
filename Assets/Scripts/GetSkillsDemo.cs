@@ -5,6 +5,12 @@ using UnityEngine;
 public class GetSkillsDemo : MonoBehaviour
 {
 
+    /******************
+     *                *
+     *  GetSkills.cs  *
+     *  is required   *
+     *                *
+     ******************/
     //declaring the skills list
     //we must initialize it to make sure that is not null
     public List<SkillModel> skills = new List<SkillModel> { };
