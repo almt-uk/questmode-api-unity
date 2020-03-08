@@ -1,4 +1,5 @@
 ﻿using SimpleJSON;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,11 @@ public class SkillModel
             default:
                 return "unknown";
         }
+    }
+
+    public void setClassType(int class_type)
+    {
+        this.class_type = class_type;
     }
 }
 
@@ -107,7 +113,7 @@ public class GetSkills
                     SkillModel mSkillModel = new SkillModel();
                     mSkillModel.skill_id = skill["skill_id"];
                     mSkillModel.name = skill["name"];
-                    mSkillModel.class_type = skill["class_type"];
+                    mSkillModel.setClassType(skill["class_type"]);
                     mSkillModel.row = skill["row"];
                     mSkillsModel.addSkill(mSkillModel);
                 }
