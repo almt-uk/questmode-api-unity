@@ -15,7 +15,8 @@ public class GetSkillsDemo : MonoBehaviour
     //we must initialize it to make sure that is not null
     public List<SkillModel> skills = new List<SkillModel> { };
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         
         //initialize the class
         GetSkills mGetSkills = new GetSkills();
@@ -58,7 +59,8 @@ public class GetSkillsDemo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
 		
 	}
 }
