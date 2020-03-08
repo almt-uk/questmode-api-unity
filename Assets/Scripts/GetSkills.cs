@@ -90,9 +90,8 @@ public class GetSkills
         form.AddField("api_key", api_key);
         form.AddField("api_password", api_password);
         form.AddField("user_id", user_id);
-        string domainApiPrefix = "https://questmode.000webhostapp.com/v1";
 
-        using (UnityWebRequest www = UnityWebRequest.Post(domainApiPrefix + "/unity/get/skills", form))
+        using (UnityWebRequest www = UnityWebRequest.Post(EndPoints.GET_SKILLS, form))
         {
             yield return www.SendWebRequest();
 
