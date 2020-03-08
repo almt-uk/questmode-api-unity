@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class GetSkillsDemo : MonoBehaviour
 {
-    
-	// Use this for initialization
-	void Start () {
+
+    //declaring the skills list
+    //we must initialize it to make sure that is not null
+    public List<SkillModel> skills = new List<SkillModel> { };
+    // Use this for initialization
+    void Start () {
         
         //initialize the class
         GetSkills mGetSkills = new GetSkills();
