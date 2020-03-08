@@ -8,7 +8,8 @@ public class GetSkillsDemo : MonoBehaviour
     /******************
      *                *
      *  GetSkills.cs  *
-     *  is required   *
+     *  EndPoints.cs  *
+     *  are required  *
      *                *
      ******************/
     //declaring the skills list
