@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndPoints : MonoBehaviour {
+public class EndPoints
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private static readonly string BASE_URL = "https://questmode.000webhostapp.com/v1";
+    private static readonly string UNITY_API_MODE = "/unity";
+
 }
