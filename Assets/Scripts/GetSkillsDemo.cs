@@ -47,7 +47,7 @@ public class GetSkillsDemo : MonoBehaviour
         foreach (SkillModel skill in skills)
         {
             Debug.Log("Skill Name: " + skill.name);
-            Debug.Log("Skill Class: " + skill.class_type);
+            Debug.Log("Skill Class: " + skill.getClass());
         }
     }
 
