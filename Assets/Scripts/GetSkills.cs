@@ -16,7 +16,18 @@ public class SkillsModel
 {
 
     public bool error;
-    public List<SkillModel> skills = new List<SkillModel> { };
+    private List<SkillModel> skills = new List<SkillModel> { };
+
+    public List<SkillModel> getSkills()
+    {
+        return skills;
+    }
+
+    public void addSkill(SkillModel skill)
+    {
+        this.skills.Add(skill);
+    }
+
 
 }
 
@@ -83,7 +94,7 @@ public class GetSkills
                     mSkillModel.name = skill["name"];
                     mSkillModel.class_type = skill["class_type"];
                     mSkillModel.row = skill["row"];
-                    mSkillsModel.skills.Add(mSkillModel);
+                    mSkillsModel.addSkill(mSkillModel);
                 }
                 callback(mSkillsModel);
             }
