@@ -8,11 +8,29 @@ public class GetSkillsDemo : MonoBehaviour
 	// Use this for initialization
 	void Start () {
         
+        //initialize the class
         GetSkills mGetSkills = new GetSkills();
+        //setting the api key
         mGetSkills.setApiKey("");
+        //setting the api password
         mGetSkills.setApiPassword("");
+        //setting the user id
         mGetSkills.setUserID(737353637);
+        //calling the classing and waiting for the response
+        //must use coroutine because we don't know exactly when the data will be retrieved
         StartCoroutine(mGetSkills.RequestCheckApi((mSkillsModelDB) => {
+            //the data is retrieved using the SkillsModel Object - class model
+            //assuring that we retrieved succesfully we must check for errors first
+            if(mSkillsModelDB.error)
+            {
+                //error
+                Debug.Log("error on retrieving data");
+                return;
+            }
+            else
+            {
+                //getting the data from the model and storing it into the class
+            }
             print(mSkillsModelDB.skills);
 
         }));
