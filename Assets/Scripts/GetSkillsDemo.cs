@@ -26,7 +26,7 @@ public class GetSkillsDemo : MonoBehaviour
         //setting the api password
         mGetSkills.setApiPassword("");
         //setting the user id
-        mGetSkills.setUserID();
+        mGetSkills.setUserID(0);
         //calling the classing and waiting for the response
         //must use coroutine because we don't know exactly when the data will be retrieved
         StartCoroutine(mGetSkills.RequestCheckApi((mSkillsModelDB) => {
